@@ -1,0 +1,70 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "candidate"
+                },
+                {
+                    "name": "jobOrder"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "type"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "startDate"
+                },
+                {
+                    "name": "endDate"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Fee",
+        "rows": [
+            [
+                {
+                    "name": "salary"
+                },
+                {
+                    "name": "feeAmount"
+                }
+            ],
+            [
+                {
+                    "name": "invoiceNumber"
+                },
+                {
+                    "name": "invoiceDate"
+                }
+            ],
+            [
+                {
+                    "name": "guaranteeEndDate"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

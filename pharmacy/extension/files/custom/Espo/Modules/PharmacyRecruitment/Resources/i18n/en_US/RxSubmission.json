@@ -1,0 +1,26 @@
+{
+    "fields": {
+        "candidate": "Candidate",
+        "jobOrder": "Job order",
+        "stage": "Stage",
+        "consentDate": "Consent to submit",
+        "submittedAt": "Submitted",
+        "interviewAt": "Interview",
+        "rejectionReason": "Rejection reason"
+    },
+    "links": {
+        "account": "Client",
+        "candidate": "Candidate",
+        "jobOrder": "Job order"
+    },
+    "labels": {
+        "Create RxSubmission": "Add submission",
+        "Progress": "Progress"
+    },
+    "tooltips": {
+        "consentDate": "The date the candidate agreed to their details going to this client."
+    },
+    "messages": {
+        "rxConsentNeeded": "Record the date the candidate consented before sending their details to the client."
+    }
+}

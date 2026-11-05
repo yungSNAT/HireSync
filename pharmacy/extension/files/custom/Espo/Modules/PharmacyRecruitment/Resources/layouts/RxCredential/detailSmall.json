@@ -1,0 +1,37 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "candidate"
+                },
+                {
+                    "name": "type"
+                }
+            ],
+            [
+                {
+                    "name": "identifier"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "expiryDate"
+                },
+                {
+                    "name": "verificationMethod"
+                }
+            ],
+            [
+                {
+                    "name": "evidence"
+                },
+                false
+            ]
+        ]
+    }
+]

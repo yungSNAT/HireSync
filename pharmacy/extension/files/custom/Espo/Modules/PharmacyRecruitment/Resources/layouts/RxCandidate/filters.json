@@ -1,0 +1,15 @@
+[
+    "profession",
+    "status",
+    "complianceStatus",
+    "engagementTypes",
+    "workRegions",
+    "skills",
+    "dispensingSystems",
+    "availabilityDate",
+    "nextCredentialExpiry",
+    "retentionReviewDate",
+    "assignedUser",
+    "teams",
+    "createdAt"
+]

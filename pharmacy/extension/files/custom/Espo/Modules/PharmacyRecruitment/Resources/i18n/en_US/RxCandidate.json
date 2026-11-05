@@ -1,0 +1,51 @@
+{
+    "fields": {
+        "profession": "Role",
+        "status": "Status",
+        "engagementTypes": "Engagement types",
+        "availabilityDate": "Available from",
+        "workRegions": "Work regions",
+        "travelRadiusKm": "Travel radius (km)",
+        "hasDriverLicence": "Driver licence",
+        "dispensingSystems": "Dispensing systems",
+        "skills": "Skills",
+        "resume": "Résumé",
+        "abn": "ABN",
+        "complianceStatus": "Compliance",
+        "complianceSummary": "Outstanding items",
+        "nextCredentialExpiry": "Next expiry",
+        "privacyNoticeDate": "Privacy notice given",
+        "marketingConsentDate": "Marketing consent given",
+        "marketingConsentMethod": "How consent was given",
+        "retentionReviewDate": "Retention review date",
+        "workOnRecordUntil": "Work on record until",
+        "source": "Source"
+    },
+    "links": {
+        "credentials": "Credentials",
+        "submissions": "Submissions",
+        "placements": "Placements",
+        "shifts": "Shifts"
+    },
+    "labels": {
+        "Create RxCandidate": "Add candidate",
+        "Availability": "Availability",
+        "Compliance": "Compliance",
+        "Privacy": "Privacy",
+        "Notes": "Notes"
+    },
+    "tooltips": {
+        "complianceStatus": "Measured against the requirements of this person's own role. Client and job requirements are checked when a shift or placement is confirmed.",
+        "privacyNoticeDate": "The date this person received your collection notice.",
+        "marketingConsentDate": "Send marketing only while this date is filled in. Clear it when consent is withdrawn.",
+        "retentionReviewDate": "When to review whether this record is still needed.",
+        "workOnRecordUntil": "The last day of work the retention hold counts from, kept if that work is later cancelled, moved or deleted."
+    },
+    "presetFilters": {
+        "actionRequired": "Action required",
+        "retentionDue": "Retention review due"
+    },
+    "messages": {
+        "rxCandidateRoleLocked": "A candidate's role sets what they must hold, so only a manager can change it. Ask a manager to update this record."
+    }
+}

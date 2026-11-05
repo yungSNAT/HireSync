@@ -1,0 +1,9 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-paper-plane",
+    "color": "#46AC48",
+    "kanbanViewMode": true
+}

@@ -1,0 +1,11 @@
+[
+    "status",
+    "type",
+    "account",
+    "startDate",
+    "guaranteeEndDate",
+    "invoiceDate",
+    "assignedUser",
+    "teams",
+    "createdAt"
+]

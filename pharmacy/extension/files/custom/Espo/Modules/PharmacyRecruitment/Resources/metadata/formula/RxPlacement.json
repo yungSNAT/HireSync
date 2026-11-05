@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "name = string\\concatenate(record\\attribute('RxCandidate', candidateId, 'name'), ' - ', record\\attribute('RxJobOrder', jobOrderId, 'name'));"
+}

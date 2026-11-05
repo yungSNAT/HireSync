@@ -1,0 +1,103 @@
+[
+    {
+        "label": "Credential",
+        "rows": [
+            [
+                {
+                    "name": "candidate"
+                },
+                {
+                    "name": "type"
+                }
+            ],
+            [
+                {
+                    "name": "identifier"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "issueDate"
+                },
+                {
+                    "name": "expiryDate"
+                }
+            ],
+            [
+                {
+                    "name": "conditions",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "workRightsBasis"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "registerStatus"
+                },
+                {
+                    "name": "checkType"
+                }
+            ],
+            [
+                {
+                    "name": "dateOfBirth"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "coverAmount"
+                },
+                {
+                    "name": "insuranceArrangement"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Verification",
+        "rows": [
+            [
+                {
+                    "name": "verificationMethod"
+                },
+                {
+                    "name": "evidence"
+                }
+            ],
+            [
+                {
+                    "name": "verifiedBy"
+                },
+                {
+                    "name": "verifiedAt"
+                }
+            ],
+            [
+                {
+                    "name": "verifyingEntity"
+                },
+                false
+            ]
+        ]
+    },
+    {
+        "label": "Notes",
+        "rows": [
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

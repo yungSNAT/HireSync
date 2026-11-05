@@ -1,0 +1,14 @@
+[
+    {
+        "name": "type",
+        "link": true
+    },
+    {
+        "name": "status",
+        "width": 22
+    },
+    {
+        "name": "expiryDate",
+        "width": 22
+    }
+]

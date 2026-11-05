@@ -1,0 +1,85 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "contact"
+                }
+            ],
+            [
+                {
+                    "name": "jobType"
+                },
+                {
+                    "name": "profession"
+                }
+            ],
+            [
+                {
+                    "name": "location"
+                },
+                {
+                    "name": "openings"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Terms",
+        "rows": [
+            [
+                {
+                    "name": "startDate"
+                },
+                {
+                    "name": "endDate"
+                }
+            ],
+            [
+                {
+                    "name": "hoursPerWeek"
+                },
+                {
+                    "name": "awardClassification"
+                }
+            ],
+            [
+                {
+                    "name": "salaryMin"
+                },
+                {
+                    "name": "salaryMax"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Requirements",
+        "rows": [
+            [
+                {
+                    "name": "requiredCredentials",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

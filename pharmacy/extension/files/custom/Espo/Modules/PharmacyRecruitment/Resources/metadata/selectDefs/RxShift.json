@@ -1,0 +1,12 @@
+{
+    "primaryFilterClassNameMap": {
+        "unfilled": "Espo\\Modules\\PharmacyRecruitment\\Classes\\Select\\RxShift\\PrimaryFilters\\Unfilled",
+        "nextSevenDays": "Espo\\Modules\\PharmacyRecruitment\\Classes\\Select\\RxShift\\PrimaryFilters\\NextSevenDays",
+        "atRisk": "Espo\\Modules\\PharmacyRecruitment\\Classes\\Select\\RxShift\\PrimaryFilters\\AtRisk"
+    },
+    "selectAttributesDependencyMap": {
+        "dateStart": [
+            "dateEnd"
+        ]
+    }
+}

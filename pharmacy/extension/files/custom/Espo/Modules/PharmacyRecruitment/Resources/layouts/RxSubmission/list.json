@@ -1,0 +1,22 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "stage",
+        "width": 16
+    },
+    {
+        "name": "consentDate",
+        "width": 13
+    },
+    {
+        "name": "submittedAt",
+        "width": 13
+    },
+    {
+        "name": "assignedUser",
+        "width": 15
+    }
+]

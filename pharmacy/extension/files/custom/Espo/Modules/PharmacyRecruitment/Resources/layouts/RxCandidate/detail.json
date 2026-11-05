@@ -1,0 +1,133 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "profession"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "source"
+                },
+                {
+                    "name": "abn"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Availability",
+        "rows": [
+            [
+                {
+                    "name": "engagementTypes"
+                },
+                {
+                    "name": "availabilityDate"
+                }
+            ],
+            [
+                {
+                    "name": "workRegions"
+                },
+                {
+                    "name": "travelRadiusKm"
+                }
+            ],
+            [
+                {
+                    "name": "dispensingSystems"
+                },
+                {
+                    "name": "skills"
+                }
+            ],
+            [
+                {
+                    "name": "hasDriverLicence"
+                },
+                {
+                    "name": "resume"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Compliance",
+        "rows": [
+            [
+                {
+                    "name": "complianceStatus"
+                },
+                {
+                    "name": "nextCredentialExpiry"
+                }
+            ],
+            [
+                {
+                    "name": "complianceSummary",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Privacy",
+        "rows": [
+            [
+                {
+                    "name": "privacyNoticeDate"
+                },
+                {
+                    "name": "retentionReviewDate"
+                }
+            ],
+            [
+                {
+                    "name": "workOnRecordUntil"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "marketingConsentDate"
+                },
+                {
+                    "name": "marketingConsentMethod"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Notes",
+        "rows": [
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

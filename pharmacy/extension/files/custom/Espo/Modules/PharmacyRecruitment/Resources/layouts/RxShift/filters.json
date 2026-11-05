@@ -1,0 +1,12 @@
+[
+    "status",
+    "account",
+    "candidate",
+    "profession",
+    "dateStart",
+    "atRisk",
+    "timesheetReceived",
+    "invoiced",
+    "assignedUser",
+    "teams"
+]

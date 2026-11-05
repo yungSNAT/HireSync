@@ -1,0 +1,8 @@
+{
+    "RxCheckCompliance": {
+        "name": "Check pharmacy credentials",
+        "jobClassName": "Espo\\Modules\\PharmacyRecruitment\\Jobs\\CheckCompliance",
+        "scheduling": "30 6 * * *",
+        "isDefault": true
+    }
+}

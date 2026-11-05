@@ -1,0 +1,40 @@
+{
+    "fields": {
+        "rxClientType": "Client type",
+        "rxBannerGroup": "Banner group",
+        "rxPharmacyApprovalNumber": "PBS approval number",
+        "rxLocalHealthDistrict": "Local health district",
+        "rxPharmacyCouncilNumber": "Pharmacy Council number",
+        "rxPharmacyApprovalExpiry": "Pharmacy approval expires",
+        "rxOtpDosingPoint": "OTP dosing point",
+        "rxPayrollDeclarationDate": "Payroll tax declaration held",
+        "rxMmmCategory": "Modified Monash category",
+        "rxDispensingSystem": "Dispensing system",
+        "rxAbn": "ABN",
+        "rxRequiredCredentials": "Site required credentials",
+        "rxPermanentFeePercent": "Permanent fee (%)",
+        "rxReplacementGuaranteeDays": "Replacement guarantee (days)",
+        "rxTermsSignedDate": "Terms signed",
+        "rxSiteNotes": "Site notes"
+    },
+    "links": {
+        "rxJobOrders": "Job orders",
+        "rxPlacements": "Placements",
+        "rxShifts": "Shifts"
+    },
+    "labels": {
+        "Pharmacy": "Pharmacy",
+        "Commercial terms": "Commercial terms",
+        "Recruitment": "Recruitment"
+    },
+    "tooltips": {
+        "rxClientType": "NSW Health hospitals add a police check, a Working with Children Check and vaccination evidence to every shift and placement.",
+        "rxPharmacyApprovalNumber": "The site's approval to supply PBS medicines. Separate from the Pharmacy Council number.",
+        "rxPharmacyCouncilNumber": "The site's registration with the Pharmacy Council of NSW, starting PC. Public hospitals have none.",
+        "rxPharmacyApprovalExpiry": "Pharmacy approval years end on 30 June.",
+        "rxOtpDosingPoint": "The site doses opioid treatment clients. Pharmacists working there need the OTP Standards attestation.",
+        "rxPayrollDeclarationDate": "The date the client gave its payroll tax declaration, for contractor arrangements.",
+        "rxMmmCategory": "The site's remoteness category, MM 1 to MM 7 (2023 edition).",
+        "rxRequiredCredentials": "Every shift or placement here must also hold these."
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "fields": {
+        "account": "Client",
+        "candidate": "Candidate",
+        "jobOrder": "Job order",
+        "status": "Status",
+        "dateStart": "Start",
+        "dateEnd": "End",
+        "profession": "Role",
+        "breakMinutes": "Unpaid break (minutes)",
+        "engagementModel": "Engagement model",
+        "payRate": "Pay rate (per hour)",
+        "chargeRate": "Charge rate (per hour)",
+        "paidHours": "Paid hours",
+        "payTotal": "Pay total",
+        "chargeTotal": "Charge total",
+        "margin": "Margin before on-costs",
+        "travelAllowance": "Travel allowance",
+        "accommodation": "Accommodation",
+        "timesheetReceived": "Timesheet received",
+        "invoiced": "Invoiced",
+        "atRisk": "At risk"
+    },
+    "links": {
+        "account": "Client",
+        "candidate": "Candidate",
+        "jobOrder": "Job order"
+    },
+    "labels": {
+        "Create RxShift": "Add shift",
+        "Shift": "Shift",
+        "Rates": "Rates",
+        "Notes": "Notes"
+    },
+    "tooltips": {
+        "payRate": "A flat agreed rate. This CRM doesn't apply award penalties, overtime, super or payroll tax.",
+        "chargeRate": "A flat agreed rate, before GST.",
+        "margin": "Charge total less pay total, before super, payroll tax, workers compensation and travel.",
+        "atRisk": "The daily check found this confirmed shift's candidate is no longer clear.",
+        "engagementModel": "Who engages the worker. Interstate labour hire licensing and National Law on-hire rules can turn on this."
+    },
+    "presetFilters": {
+        "unfilled": "Unfilled",
+        "nextSevenDays": "Next 7 days",
+        "atRisk": "At risk"
+    },
+    "messages": {
+        "rxShiftNeedsCandidate": "Add a candidate before confirming this shift.",
+        "rxNotCleared": "This candidate can't be confirmed. Missing or out of date: {items}.",
+        "rxDoubleBooked": "This candidate already has a confirmed shift that overlaps: {shift}.",
+        "rxPlacementIncomplete": "A placement needs a candidate, a job order and a start date before it can start.",
+        "rxRoleHasNoRules": "No compliance requirements are set for the role {role}, so this can't be confirmed. Ask an administrator.",
+        "rxShiftEndsBeforeStart": "A shift must end after it starts.",
+        "rxClientNotJobClient": "The client here isn't the job order's client. Choose the same client, or a job order for this one.",
+        "rxLinkedRecordDeleted": "The client or job order on this record has been deleted. Choose another before continuing."
+    }
+}

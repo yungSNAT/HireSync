@@ -1,0 +1,26 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "account",
+        "width": 22
+    },
+    {
+        "name": "profession",
+        "width": 15
+    },
+    {
+        "name": "jobType",
+        "width": 11
+    },
+    {
+        "name": "status",
+        "width": 10
+    },
+    {
+        "name": "assignedUser",
+        "width": 14
+    }
+]

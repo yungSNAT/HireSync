@@ -1,0 +1,6 @@
+{
+    "primaryFilterClassNameMap": {
+        "actionRequired": "Espo\\Modules\\PharmacyRecruitment\\Classes\\Select\\RxCandidate\\PrimaryFilters\\ActionRequired",
+        "retentionDue": "Espo\\Modules\\PharmacyRecruitment\\Classes\\Select\\RxCandidate\\PrimaryFilters\\RetentionDue"
+    }
+}

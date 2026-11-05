@@ -1,0 +1,48 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "candidate"
+                },
+                {
+                    "name": "jobOrder"
+                }
+            ],
+            [
+                {
+                    "name": "stage"
+                },
+                {
+                    "name": "consentDate"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Progress",
+        "rows": [
+            [
+                {
+                    "name": "submittedAt"
+                },
+                {
+                    "name": "interviewAt"
+                }
+            ],
+            [
+                {
+                    "name": "rejectionReason"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

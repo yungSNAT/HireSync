@@ -1,0 +1,26 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "account",
+        "width": 20
+    },
+    {
+        "name": "status",
+        "width": 13
+    },
+    {
+        "name": "startDate",
+        "width": 12
+    },
+    {
+        "name": "feeAmount",
+        "width": 12
+    },
+    {
+        "name": "assignedUser",
+        "width": 14
+    }
+]

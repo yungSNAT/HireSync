@@ -1,0 +1,9 @@
+[
+    "type",
+    "status",
+    "expiryDate",
+    "verificationMethod",
+    "verifiedBy",
+    "assignedUser",
+    "createdAt"
+]

@@ -1,0 +1,246 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": true,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "account": {
+            "type": "link",
+            "required": true,
+            "audited": true
+        },
+        "contact": {
+            "type": "link"
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "Open",
+                "On hold",
+                "Filled",
+                "Cancelled"
+            ],
+            "default": "Open",
+            "audited": true,
+            "displayAsLabel": true,
+            "labelType": "state",
+            "style": {
+                "Open": "primary",
+                "Filled": "success",
+                "Cancelled": "info"
+            }
+        },
+        "jobType": {
+            "type": "enum",
+            "options": [
+                "Permanent",
+                "Fixed term",
+                "Locum"
+            ],
+            "required": true,
+            "default": "Permanent"
+        },
+        "profession": {
+            "type": "enum",
+            "optionsReference": "RxCandidate.profession",
+            "required": true,
+            "default": "Pharmacist",
+            "audited": true
+        },
+        "awardClassification": {
+            "type": "varchar",
+            "maxLength": 100,
+            "tooltip": true,
+            "options": [
+                "Pharmacy assistant level 1",
+                "Pharmacy assistant level 2",
+                "Pharmacy assistant level 3",
+                "Pharmacy assistant level 4",
+                "Pharmacy student 1st year",
+                "Pharmacy student 2nd year",
+                "Pharmacy student 3rd year",
+                "Pharmacy student 4th year",
+                "Pharmacy intern 1st half",
+                "Pharmacy intern 2nd half",
+                "Pharmacist",
+                "Experienced pharmacist",
+                "Pharmacist in charge",
+                "Pharmacist manager",
+                "NSW public hospital Grade 1",
+                "NSW public hospital Grade 2",
+                "NSW public hospital Grade 3",
+                "NSW public hospital Grade 4",
+                "NSW public hospital Grade 5",
+                "NSW public hospital Grade 6",
+                "NSW public hospital Grade 7"
+            ]
+        },
+        "openings": {
+            "type": "int",
+            "min": 1,
+            "default": 1
+        },
+        "startDate": {
+            "type": "date"
+        },
+        "endDate": {
+            "type": "date",
+            "after": "startDate"
+        },
+        "salaryMin": {
+            "type": "currency",
+            "min": 0,
+            "onlyDefaultCurrency": true
+        },
+        "salaryMax": {
+            "type": "currency",
+            "min": 0,
+            "onlyDefaultCurrency": true
+        },
+        "location": {
+            "type": "varchar",
+            "maxLength": 150
+        },
+        "hoursPerWeek": {
+            "type": "float",
+            "min": 0,
+            "max": 168
+        },
+        "requiredCredentials": {
+            "type": "multiEnum",
+            "optionsReference": "RxCredential.type",
+            "tooltip": true,
+            "audited": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "parent"
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "parent"
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "entity": "Task",
+            "foreign": "parent"
+        },
+        "emails": {
+            "type": "hasChildren",
+            "entity": "Email",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "account": {
+            "type": "belongsTo",
+            "entity": "Account",
+            "foreign": "rxJobOrders"
+        },
+        "contact": {
+            "type": "belongsTo",
+            "entity": "Contact",
+            "foreign": "rxJobOrders"
+        },
+        "submissions": {
+            "type": "hasMany",
+            "entity": "RxSubmission",
+            "foreign": "jobOrder",
+            "readOnly": true
+        },
+        "placements": {
+            "type": "hasMany",
+            "entity": "RxPlacement",
+            "foreign": "jobOrder",
+            "readOnly": true
+        },
+        "shifts": {
+            "type": "hasMany",
+            "entity": "RxShift",
+            "foreign": "jobOrder",
+            "readOnly": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    }
+}

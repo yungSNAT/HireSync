@@ -1,0 +1,23 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "candidate"
+                },
+                {
+                    "name": "jobOrder"
+                }
+            ],
+            [
+                {
+                    "name": "stage"
+                },
+                {
+                    "name": "consentDate"
+                }
+            ]
+        ]
+    }
+]

@@ -1,0 +1,386 @@
+{
+    "fields": {
+        "name": {
+            "type": "personName",
+            "isPersonalData": true
+        },
+        "salutationName": {
+            "type": "enum",
+            "options": [
+                "",
+                "Mr.",
+                "Ms.",
+                "Mrs.",
+                "Dr."
+            ]
+        },
+        "firstName": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "lastName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "emailAddress": {
+            "type": "email",
+            "isPersonalData": true
+        },
+        "phoneNumber": {
+            "type": "phone",
+            "typeList": [
+                "Mobile",
+                "Office",
+                "Home",
+                "Fax",
+                "Other"
+            ],
+            "defaultType": "Mobile",
+            "isPersonalData": true
+        },
+        "address": {
+            "type": "address",
+            "isPersonalData": true
+        },
+        "addressStreet": {
+            "type": "text",
+            "maxLength": 255,
+            "dbType": "varchar"
+        },
+        "addressCity": {
+            "type": "varchar"
+        },
+        "addressState": {
+            "type": "varchar"
+        },
+        "addressCountry": {
+            "type": "varchar"
+        },
+        "addressPostalCode": {
+            "type": "varchar"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": true,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "profession": {
+            "type": "enum",
+            "options": [
+                "Pharmacist",
+                "Pharmacist (limited registration)",
+                "Intern pharmacist",
+                "Pharmacy technician",
+                "Pharmacy assistant"
+            ],
+            "required": true,
+            "audited": true
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "New",
+                "Active",
+                "Placed",
+                "On hold",
+                "Inactive"
+            ],
+            "default": "New",
+            "audited": true,
+            "displayAsLabel": true,
+            "labelType": "state",
+            "style": {
+                "Active": "primary",
+                "Placed": "success",
+                "Inactive": "info"
+            }
+        },
+        "engagementTypes": {
+            "type": "multiEnum",
+            "options": [
+                "Permanent",
+                "Fixed term",
+                "Locum"
+            ]
+        },
+        "availabilityDate": {
+            "type": "date"
+        },
+        "workRegions": {
+            "type": "multiEnum",
+            "options": [
+                "Central Coast",
+                "Far West",
+                "Hunter New England",
+                "Illawarra Shoalhaven",
+                "Mid North Coast",
+                "Murrumbidgee",
+                "Nepean Blue Mountains",
+                "Northern NSW",
+                "Northern Sydney",
+                "South Eastern Sydney",
+                "South Western Sydney",
+                "Southern NSW",
+                "Sydney",
+                "Western NSW",
+                "Western Sydney"
+            ]
+        },
+        "travelRadiusKm": {
+            "type": "int",
+            "min": 0
+        },
+        "hasDriverLicence": {
+            "type": "bool"
+        },
+        "dispensingSystems": {
+            "type": "multiEnum",
+            "allowCustomOptions": true,
+            "options": [
+                "Compound Direct",
+                "Corum Clear Dispense",
+                "Dispense Works",
+                "Fred Dispense",
+                "Fred Dispense Plus",
+                "i.Pharmacy",
+                "LOTS Complete",
+                "LOTS Dispense",
+                "MerlinMAP",
+                "Minfos",
+                "Mountaintop Dispense",
+                "myScript",
+                "RxOne",
+                "ScriptPro Dispense",
+                "Xumi",
+                "Z Dispense"
+            ]
+        },
+        "skills": {
+            "type": "multiEnum",
+            "allowCustomOptions": true,
+            "options": [
+                "Aged care",
+                "Compounding",
+                "Dose administration aids",
+                "Hospital",
+                "Immunisation",
+                "Medication reviews",
+                "Opioid treatment"
+            ]
+        },
+        "resume": {
+            "type": "file",
+            "isPersonalData": true,
+            "accept": [
+                ".pdf",
+                ".doc",
+                ".docx",
+                ".rtf"
+            ]
+        },
+        "abn": {
+            "type": "varchar",
+            "maxLength": 14,
+            "isPersonalData": true,
+            "validatorClassNameList": [
+                "Espo\\Modules\\PharmacyRecruitment\\Classes\\FieldValidators\\Abn"
+            ]
+        },
+        "complianceStatus": {
+            "type": "enum",
+            "options": [
+                "Not assessed",
+                "Clear",
+                "Expiring",
+                "Blocked"
+            ],
+            "default": "Not assessed",
+            "readOnly": true,
+            "tooltip": true,
+            "audited": true,
+            "displayAsLabel": true,
+            "labelType": "state",
+            "style": {
+                "Clear": "success",
+                "Expiring": "warning",
+                "Blocked": "danger"
+            }
+        },
+        "complianceSummary": {
+            "type": "text",
+            "readOnly": true
+        },
+        "nextCredentialExpiry": {
+            "type": "date",
+            "readOnly": true
+        },
+        "privacyNoticeDate": {
+            "type": "date",
+            "tooltip": true,
+            "audited": true
+        },
+        "marketingConsentDate": {
+            "type": "date",
+            "tooltip": true,
+            "audited": true
+        },
+        "marketingConsentMethod": {
+            "type": "varchar",
+            "maxLength": 100,
+            "audited": true
+        },
+        "retentionReviewDate": {
+            "type": "date",
+            "tooltip": true
+        },
+        "workOnRecordUntil": {
+            "type": "date",
+            "readOnly": true,
+            "tooltip": true
+        },
+        "source": {
+            "type": "enum",
+            "options": [
+                "",
+                "Referral",
+                "Job board",
+                "Website",
+                "LinkedIn",
+                "Direct approach",
+                "Other"
+            ]
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "parent"
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "parent"
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "entity": "Task",
+            "foreign": "parent"
+        },
+        "emails": {
+            "type": "hasChildren",
+            "entity": "Email",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "credentials": {
+            "type": "hasMany",
+            "entity": "RxCredential",
+            "foreign": "candidate",
+            "readOnly": true
+        },
+        "submissions": {
+            "type": "hasMany",
+            "entity": "RxSubmission",
+            "foreign": "candidate",
+            "readOnly": true
+        },
+        "placements": {
+            "type": "hasMany",
+            "entity": "RxPlacement",
+            "foreign": "candidate",
+            "readOnly": true
+        },
+        "shifts": {
+            "type": "hasMany",
+            "entity": "RxShift",
+            "foreign": "candidate",
+            "readOnly": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "emailAddress",
+            "phoneNumber"
+        ]
+    },
+    "indexes": {
+        "firstName": {
+            "columns": [
+                "firstName",
+                "deleted"
+            ]
+        },
+        "name": {
+            "columns": [
+                "firstName",
+                "lastName"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    }
+}

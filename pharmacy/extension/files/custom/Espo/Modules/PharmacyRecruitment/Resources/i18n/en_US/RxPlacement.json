@@ -1,0 +1,28 @@
+{
+    "fields": {
+        "candidate": "Candidate",
+        "jobOrder": "Job order",
+        "account": "Client",
+        "type": "Engagement",
+        "startDate": "Start",
+        "endDate": "End",
+        "status": "Status",
+        "salary": "Salary",
+        "feeAmount": "Fee",
+        "invoiceNumber": "Invoice number",
+        "invoiceDate": "Invoice date",
+        "guaranteeEndDate": "Guarantee ends"
+    },
+    "links": {
+        "account": "Client",
+        "candidate": "Candidate",
+        "jobOrder": "Job order"
+    },
+    "labels": {
+        "Create RxPlacement": "Add placement",
+        "Fee": "Fee"
+    },
+    "tooltips": {
+        "feeAmount": "Entered by hand from the client's terms."
+    }
+}

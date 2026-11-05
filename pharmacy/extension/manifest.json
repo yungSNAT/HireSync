@@ -1,0 +1,9 @@
+{
+    "name": "HireSync",
+    "description": "HireSync: permanent and locum pharmacy recruitment for NSW: candidates, credentials, job orders, submissions, placements and shifts.",
+    "author": "yungSNAT",
+    "version": "0.1.0",
+    "acceptableVersions": [">=10.0.0 <11.0.0"],
+    "php": [">=8.3.0"],
+    "releaseDate": "2026-11-05"
+}

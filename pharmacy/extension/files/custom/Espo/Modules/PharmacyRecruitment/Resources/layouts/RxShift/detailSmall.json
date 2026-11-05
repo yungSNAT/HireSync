@@ -1,0 +1,31 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "dateStart"
+                },
+                {
+                    "name": "dateEnd"
+                }
+            ],
+            [
+                {
+                    "name": "candidate"
+                },
+                {
+                    "name": "profession"
+                }
+            ]
+        ]
+    }
+]

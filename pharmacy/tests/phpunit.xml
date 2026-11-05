@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="bootstrap.php" colors="false" failOnWarning="true" failOnRisky="true">
+  <testsuites>
+    <testsuite name="unit">
+      <directory>Unit</directory>
+    </testsuite>
+    <testsuite name="api">
+      <directory>Api</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

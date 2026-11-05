@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "parent": {
+            "entityList": [
+                "__APPEND__",
+                "RxCandidate",
+                "RxJobOrder"
+            ]
+        }
+    }
+}

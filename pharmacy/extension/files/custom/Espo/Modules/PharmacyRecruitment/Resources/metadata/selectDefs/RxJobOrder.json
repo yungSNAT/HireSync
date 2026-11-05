@@ -1,0 +1,5 @@
+{
+    "primaryFilterClassNameMap": {
+        "open": "Espo\\Modules\\PharmacyRecruitment\\Classes\\Select\\RxJobOrder\\PrimaryFilters\\Open"
+    }
+}

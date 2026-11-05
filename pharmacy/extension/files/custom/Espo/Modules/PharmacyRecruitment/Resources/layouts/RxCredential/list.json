@@ -1,0 +1,22 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "status",
+        "width": 12
+    },
+    {
+        "name": "expiryDate",
+        "width": 13
+    },
+    {
+        "name": "verificationMethod",
+        "width": 18
+    },
+    {
+        "name": "assignedUser",
+        "width": 15
+    }
+]

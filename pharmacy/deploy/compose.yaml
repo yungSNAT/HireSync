@@ -1,0 +1,68 @@
+# EspoCRM with MariaDB and the job daemon, pinned to tested versions.
+# Port 8080 binds to loopback: put an HTTPS reverse proxy in front before anyone
+# reaches this over a network, because the CRM holds candidates' personal data.
+name: hiresync
+
+services:
+  db:
+    image: mariadb:11.8
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?set it in the environment file}
+      MARIADB_DATABASE: espocrm
+      MARIADB_USER: espocrm
+      MARIADB_PASSWORD: ${DB_PASSWORD:?set it in the environment file}
+    volumes:
+      - db:/var/lib/mysql
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      start_period: 10s
+      timeout: 10s
+      retries: 6
+
+  espocrm:
+    image: espocrm/espocrm:${ESPO_VERSION:-10.0.11}
+    environment:
+      ESPOCRM_DATABASE_HOST: db
+      ESPOCRM_DATABASE_USER: espocrm
+      ESPOCRM_DATABASE_PASSWORD: ${DB_PASSWORD:?set it in the environment file}
+      ESPOCRM_ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ESPOCRM_ADMIN_PASSWORD: ${ADMIN_PASSWORD:?set it in the environment file}
+      ESPOCRM_SITE_URL: ${SITE_URL:?set it in the environment file}
+    volumes:
+      - data:/var/www/html/data
+      - custom:/var/www/html/custom
+      - client-custom:/var/www/html/client/custom
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      # app-check alone can pass mid-install. Apache starts last, and installing the extension any
+      # sooner fails the image's own final check.
+      test: ["CMD-SHELL", "bin/command app-check && curl -fso /dev/null http://localhost/"]
+      start_period: 40s
+      interval: 20s
+      timeout: 20s
+      retries: 12
+    ports:
+      - "127.0.0.1:${PORT:-8080}:80"
+
+  daemon:
+    image: espocrm/espocrm:${ESPO_VERSION:-10.0.11}
+    entrypoint: docker-daemon.sh
+    volumes:
+      - data:/var/www/html/data
+      - custom:/var/www/html/custom
+      - client-custom:/var/www/html/client/custom
+    restart: unless-stopped
+    depends_on:
+      espocrm:
+        condition: service_healthy
+
+volumes:
+  db:
+  data:
+  custom:
+  client-custom:

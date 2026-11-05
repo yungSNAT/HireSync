@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "City": "Suburb",
+        "State": "State",
+        "PostalCode": "Postcode"
+    },
+    "fields": {
+        "addressCity": "Suburb",
+        "addressState": "State",
+        "addressPostalCode": "Postcode",
+        "billingAddressCity": "Suburb",
+        "billingAddressState": "State",
+        "billingAddressPostalCode": "Postcode",
+        "shippingAddressCity": "Suburb (Shipping)",
+        "shippingAddressState": "State (Shipping)",
+        "shippingAddressPostalCode": "Postcode (Shipping)"
+    }
+}

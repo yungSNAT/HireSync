@@ -1,0 +1,163 @@
+{
+    "fields": {
+        "rxClientType": {
+            "type": "enum",
+            "options": [
+                "",
+                "Community pharmacy",
+                "NSW Health hospital",
+                "Private hospital",
+                "Aged care provider",
+                "Pharmacy group",
+                "Other"
+            ],
+            "tooltip": true
+        },
+        "rxBannerGroup": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [
+                "Amcal",
+                "Blooms The Chemist",
+                "Chemist Warehouse",
+                "Direct Chemist Outlet",
+                "Discount Drug Stores",
+                "Good Price Pharmacy",
+                "Pharmasave",
+                "Priceline Pharmacy",
+                "TerryWhite Chemmart",
+                "Independent",
+                "Other"
+            ]
+        },
+        "rxPharmacyApprovalNumber": {
+            "type": "varchar",
+            "maxLength": 20,
+            "tooltip": true
+        },
+        "rxPharmacyCouncilNumber": {
+            "type": "varchar",
+            "maxLength": 20,
+            "tooltip": true
+        },
+        "rxPharmacyApprovalExpiry": {
+            "type": "date",
+            "tooltip": true
+        },
+        "rxLocalHealthDistrict": {
+            "type": "enum",
+            "options": [
+                "",
+                "Central Coast",
+                "Far West",
+                "Hunter New England",
+                "Illawarra Shoalhaven",
+                "Mid North Coast",
+                "Murrumbidgee",
+                "Nepean Blue Mountains",
+                "Northern NSW",
+                "Northern Sydney",
+                "South Eastern Sydney",
+                "South Western Sydney",
+                "Southern NSW",
+                "Sydney",
+                "Western NSW",
+                "Western Sydney",
+                "Justice Health and Forensic Mental Health Network",
+                "St Vincent's Health Network",
+                "Sydney Children's Hospitals Network"
+            ]
+        },
+        "rxMmmCategory": {
+            "type": "enum",
+            "options": [
+                "",
+                "MM 1",
+                "MM 2",
+                "MM 3",
+                "MM 4",
+                "MM 5",
+                "MM 6",
+                "MM 7"
+            ],
+            "tooltip": true
+        },
+        "rxDispensingSystem": {
+            "type": "varchar",
+            "maxLength": 50,
+            "options": [
+                "Compound Direct",
+                "Corum Clear Dispense",
+                "Dispense Works",
+                "Fred Dispense",
+                "Fred Dispense Plus",
+                "i.Pharmacy",
+                "LOTS Complete",
+                "LOTS Dispense",
+                "MerlinMAP",
+                "Minfos",
+                "Mountaintop Dispense",
+                "myScript",
+                "RxOne",
+                "ScriptPro Dispense",
+                "Xumi",
+                "Z Dispense"
+            ]
+        },
+        "rxOtpDosingPoint": {
+            "type": "bool",
+            "tooltip": true
+        },
+        "rxPayrollDeclarationDate": {
+            "type": "date",
+            "tooltip": true
+        },
+        "rxAbn": {
+            "type": "varchar",
+            "maxLength": 14,
+            "validatorClassNameList": [
+                "Espo\\Modules\\PharmacyRecruitment\\Classes\\FieldValidators\\Abn"
+            ]
+        },
+        "rxRequiredCredentials": {
+            "type": "multiEnum",
+            "optionsReference": "RxCredential.type",
+            "tooltip": true,
+            "audited": true
+        },
+        "rxPermanentFeePercent": {
+            "type": "float",
+            "min": 0,
+            "max": 100
+        },
+        "rxReplacementGuaranteeDays": {
+            "type": "int",
+            "min": 0
+        },
+        "rxTermsSignedDate": {
+            "type": "date"
+        },
+        "rxSiteNotes": {
+            "type": "text"
+        }
+    },
+    "links": {
+        "rxJobOrders": {
+            "type": "hasMany",
+            "entity": "RxJobOrder",
+            "foreign": "account"
+        },
+        "rxPlacements": {
+            "type": "hasMany",
+            "entity": "RxPlacement",
+            "foreign": "account",
+            "readOnly": true
+        },
+        "rxShifts": {
+            "type": "hasMany",
+            "entity": "RxShift",
+            "foreign": "account",
+            "readOnly": true
+        }
+    }
+}

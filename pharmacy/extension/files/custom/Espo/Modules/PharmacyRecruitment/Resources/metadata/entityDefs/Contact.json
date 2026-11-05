@@ -1,0 +1,9 @@
+{
+    "links": {
+        "rxJobOrders": {
+            "type": "hasMany",
+            "entity": "RxJobOrder",
+            "foreign": "contact"
+        }
+    }
+}

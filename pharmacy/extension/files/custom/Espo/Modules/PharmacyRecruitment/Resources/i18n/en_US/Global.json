@@ -1,0 +1,20 @@
+{
+    "scopeNames": {
+        "RxCandidate": "Candidate",
+        "RxCredential": "Credential",
+        "RxJobOrder": "Job order",
+        "RxSubmission": "Submission",
+        "RxPlacement": "Placement",
+        "RxShift": "Shift",
+        "Account": "Client"
+    },
+    "scopeNamesPlural": {
+        "RxCandidate": "Candidates",
+        "RxCredential": "Credentials",
+        "RxJobOrder": "Job orders",
+        "RxSubmission": "Submissions",
+        "RxPlacement": "Placements",
+        "RxShift": "Shifts",
+        "Account": "Clients"
+    }
+}

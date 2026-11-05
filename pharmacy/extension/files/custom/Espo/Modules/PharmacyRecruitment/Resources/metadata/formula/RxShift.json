@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "name = string\\concatenate(record\\attribute('Account', accountId, 'name'), ' - ', datetime\\format(dateStart));"
+}

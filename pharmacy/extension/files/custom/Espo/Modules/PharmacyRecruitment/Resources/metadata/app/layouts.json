@@ -1,0 +1,15 @@
+{
+    "Account": {
+        "detail": {
+            "module": "PharmacyRecruitment"
+        },
+        "bottomPanelsDetail": {
+            "module": "PharmacyRecruitment"
+        }
+    },
+    "Contact": {
+        "relationships": {
+            "module": "PharmacyRecruitment"
+        }
+    }
+}

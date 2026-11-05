@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "profession",
+        "width": 30
+    },
+    {
+        "name": "complianceStatus",
+        "width": 25
+    }
+]

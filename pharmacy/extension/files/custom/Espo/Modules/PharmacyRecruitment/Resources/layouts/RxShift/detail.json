@@ -1,0 +1,103 @@
+[
+    {
+        "label": "Shift",
+        "rows": [
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "dateStart"
+                },
+                {
+                    "name": "dateEnd"
+                }
+            ],
+            [
+                {
+                    "name": "candidate"
+                },
+                {
+                    "name": "profession"
+                }
+            ],
+            [
+                {
+                    "name": "jobOrder"
+                },
+                {
+                    "name": "breakMinutes"
+                }
+            ],
+            [
+                {
+                    "name": "engagementModel"
+                },
+                {
+                    "name": "atRisk"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Rates",
+        "rows": [
+            [
+                {
+                    "name": "payRate"
+                },
+                {
+                    "name": "chargeRate"
+                }
+            ],
+            [
+                {
+                    "name": "paidHours"
+                },
+                {
+                    "name": "margin"
+                }
+            ],
+            [
+                {
+                    "name": "payTotal"
+                },
+                {
+                    "name": "chargeTotal"
+                }
+            ],
+            [
+                {
+                    "name": "travelAllowance"
+                },
+                {
+                    "name": "accommodation"
+                }
+            ],
+            [
+                {
+                    "name": "timesheetReceived"
+                },
+                {
+                    "name": "invoiced"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Notes",
+        "rows": [
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

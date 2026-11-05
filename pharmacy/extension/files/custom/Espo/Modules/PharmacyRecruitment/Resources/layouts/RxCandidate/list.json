@@ -1,0 +1,31 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "profession",
+        "width": 16
+    },
+    {
+        "name": "status",
+        "width": 11
+    },
+    {
+        "name": "complianceStatus",
+        "width": 12
+    },
+    {
+        "name": "nextCredentialExpiry",
+        "width": 13
+    },
+    {
+        "name": "phoneNumber",
+        "width": 15,
+        "notSortable": true
+    },
+    {
+        "name": "assignedUser",
+        "width": 14
+    }
+]

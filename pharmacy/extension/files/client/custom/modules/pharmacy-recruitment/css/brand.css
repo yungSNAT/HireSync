@@ -1,0 +1,40 @@
+/*
+ * The agency's palette: charcoal #424243, dark green #056A37, green #46AC48 and yellow #F4CC68.
+ * Green and yellow fall below 3:1 on white, so text stays charcoal or dark green on white and
+ * yellow appears only on the charcoal navbar. Danger and warning keep Espo's own red and amber:
+ * the palette has none, and a compliance block must not read as a brand colour.
+ */
+:root {
+    --brand-primary: #056A37;
+    --brand-primary-text: #056A37;
+    --brand-success: #46AC48;
+    --state-success-text: #056A37;
+    --state-primary-text: #056A37;
+
+    --btn-primary-bg: #056A37;
+    --btn-primary-border: #056A37;
+    --btn-primary-hover-bg: #424243;
+    --btn-primary-hover-border: #424243;
+    --btn-primary-active-bg: #424243;
+    --btn-primary-active-border: #424243;
+
+    --link-color: #056A37;
+    --text-link-color: #056A37;
+    --text-color: #424243;
+
+    --navbar-inverse-bg: #424243;
+    --navbar-inverse-border: #424243;
+    --navbar-inverse-color: #FFFFFF;
+    --navbar-inverse-link-color: #FFFFFF;
+    --navbar-inverse-link-hover-color: #FFFFFF;
+    --navbar-inverse-link-hover-bg: #056A37;
+    --navbar-inverse-link-active-bg: #056A37;
+    --navbar-inverse-link-icon-color: #F4CC68;
+    --navbar-inverse-link-icon-hover-color: #F4CC68;
+}
+
+/* Espo colours each tab icon inline from the entity's colour, which is set for white panels. */
+#navbar .short-label,
+#navbar .short-label span {
+    color: #F4CC68 !important;
+}

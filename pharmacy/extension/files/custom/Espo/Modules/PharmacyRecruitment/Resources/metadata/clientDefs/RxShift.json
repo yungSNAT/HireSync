@@ -1,0 +1,19 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-calendar-check",
+    "color": "#056A37",
+    "filterList": [
+        {
+            "name": "unfilled"
+        },
+        {
+            "name": "nextSevenDays"
+        },
+        {
+            "name": "atRisk"
+        }
+    ]
+}

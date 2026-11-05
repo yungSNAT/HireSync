@@ -1,0 +1,31 @@
+{
+    "entity": true,
+    "object": true,
+    "layouts": true,
+    "tab": true,
+    "acl": true,
+    "customizable": true,
+    "importable": true,
+    "notifications": true,
+    "stream": false,
+    "module": "PharmacyRecruitment",
+    "type": "Event",
+    "calendar": true,
+    "activityStatusList": [
+        "Open",
+        "Offered",
+        "Confirmed"
+    ],
+    "historyStatusList": [
+        "Completed",
+        "Cancelled"
+    ],
+    "completedStatusList": [
+        "Completed"
+    ],
+    "canceledStatusList": [
+        "Cancelled"
+    ],
+    "statusField": "status",
+    "statusFieldLocked": true
+}

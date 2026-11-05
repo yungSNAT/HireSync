@@ -1,0 +1,128 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "website"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "shippingAddress"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Pharmacy",
+        "rows": [
+            [
+                {
+                    "name": "rxClientType"
+                },
+                {
+                    "name": "rxBannerGroup"
+                }
+            ],
+            [
+                {
+                    "name": "rxPharmacyApprovalNumber"
+                },
+                {
+                    "name": "rxPharmacyApprovalExpiry"
+                }
+            ],
+            [
+                {
+                    "name": "rxPharmacyCouncilNumber"
+                },
+                {
+                    "name": "rxAbn"
+                }
+            ],
+            [
+                {
+                    "name": "rxLocalHealthDistrict"
+                },
+                {
+                    "name": "rxMmmCategory"
+                }
+            ],
+            [
+                {
+                    "name": "rxDispensingSystem"
+                },
+                {
+                    "name": "rxOtpDosingPoint"
+                }
+            ],
+            [
+                {
+                    "name": "rxRequiredCredentials",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "rxSiteNotes",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Commercial terms",
+        "rows": [
+            [
+                {
+                    "name": "rxPermanentFeePercent"
+                },
+                {
+                    "name": "rxReplacementGuaranteeDays"
+                }
+            ],
+            [
+                {
+                    "name": "rxTermsSignedDate"
+                },
+                {
+                    "name": "rxPayrollDeclarationDate"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "industry"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

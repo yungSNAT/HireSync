@@ -1,0 +1,62 @@
+{
+    "roleRequirements": {
+        "Pharmacist": [
+            "Ahpra general registration",
+            "Right to work",
+            "Professional indemnity insurance"
+        ],
+        "Pharmacist (limited registration)": [
+            "Ahpra limited registration",
+            "Right to work",
+            "Professional indemnity insurance"
+        ],
+        "Intern pharmacist": [
+            "Ahpra provisional registration",
+            "Right to work",
+            "Professional indemnity insurance"
+        ],
+        "Pharmacy technician": [
+            "Right to work"
+        ],
+        "Pharmacy assistant": [
+            "Right to work"
+        ]
+    },
+    "clientTypeRequirements": {
+        "NSW Health hospital": [
+            "National police check",
+            "Working with Children Check",
+            "NSW Health vaccination evidence"
+        ]
+    },
+    "noExpiryTypes": [
+        "Right to work",
+        "Identity check",
+        "Aged care statutory declaration",
+        "Immuniser certificate",
+        "MMR Credential",
+        "ACOP Credential",
+        "OTP Standards attestation",
+        "UTI treatment training",
+        "Hormonal contraception training",
+        "Medicine injection training",
+        "Minor skin conditions training"
+    ],
+    "validityMonthsFromIssue": {
+        "National police check": 36,
+        "CPR certificate": 12,
+        "Paediatric CPR certificate": 12,
+        "Immuniser annual review": 12
+    },
+    "minimumInsuranceCover": 20000000,
+    "retentionYearsAfterWork": {
+        "Working with Children Check": 7
+    },
+    "reminderDays": [
+        90,
+        30,
+        7
+    ],
+    "expiringWindowDays": 60,
+    "shiftLookaheadDays": 14
+}

@@ -1,0 +1,8 @@
+{
+    "duplicateWhereBuilderClassName": "Espo\\Classes\\DuplicateWhereBuilders\\General",
+    "actions": {
+        "merge": {
+            "disabled": true
+        }
+    }
+}
